@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Page title</title>
+</head>
+<body>
+    <div class="container">
+        <input type="text" id="displays" value="0" disabled>
+        <div class="1st">
+        <button class="first", onClick="append('1')">1</button>
+        <button class="first", onClick="append('2')">2</button>
+        <button class="first", onClick="append('3')">3</button>
+        <button class="first", onClick="append('+')">+</button>
+        </div>
+        <div class="2nd">
+        <button class="second", onClick="append('4')">4</button>
+        <button class="second", onClick="append('5')">5</button>
+        <button class="second", onClick="append('6')">6</button>                  
+        <button class="second", onClick="append('-')">-</button>
+        </div>
+        <div class="3rd">
+        <button class="third", onClick="append('7')">7</button>
+        <button class="third", onClick="append('8')">8</button>
+        <button class="third", onClick="append('9')">9</button>                
+        <button class="third", onClick="append('*')">×</button>
+        </div>
+        <div class="4th">
+        <button class="fourth", onClick="append('0')">0</button>
+        <button class="fourth", onClick="append('00')">00</button>
+        <button class="fourth", onClick="append('.')">.</button> 
+        <button class="fourth", onClick="append('/')">÷</button>  
+        </div>
+   
+        <div class="5th">
+            <button class="fifth", onClick="calculate()">=</button>
+        <button class="fifth", onClick="clear1()">C</button>
+        </div>
+       
+    </div>
+</body>
+<style>
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    gap: 10px;
+    background-image: linear-gradient(to bottom, #1100ff,
+#0d00bc,
+#090088,
+#060058,
+#020023)}    
+.container{
+    border: 12px, solid;
+    padding: 5px;
+    border-image: radial-gradient(white, cyan, blue) 1/1;
+}
+#displays{
+    width:200px;
+    height: 20px;
+    background-clip: text;
+    color: transparent;
+}
+.first{
+    background-color: #1100ff;
+    width: 50px;
+    height: 50px;
+    box-shadow: 5px 5px #1100ff;
+    margin:5px;
+}
+.1st{
+    
+}
+.second{
+    background-color: #0d00bc;
+    width: 50px;
+    height: 50px;
+    margin:5px;
+    box-shadow: 5px 5px #0d00bc;
+}
+.third{
+    background-color: #090088;
+    width: 50px;
+    height: 50px;
+    margin:5px;
+    box-shadow: 5px 5px #090088;
+}
+.fourth{
+    background-color: #060058;
+    width: 50px;
+    height: 50px;
+    margin:5px;
+    box-shadow: 5px 5px #060058;
+}
+.fifth{
+    background-color: #020023;
+    width: 103px;
+    height: 50px;
+    margin:5px;
+    box-shadow: 5px 5px #020023;
+
+button{
+    
+}
+}
+</style>
+</html>
+<script src="calc.js"> </script>
